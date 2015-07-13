@@ -7,8 +7,8 @@ permalink:        pretty
 
 # Setup
 title:            Hacker Rank
-tagline:          'Tagline'
-description:      'Description'
+tagline:          "My personal attemp"
+description:      ''
 baseurl:	  "/hackerrank"
 url:              "http://straktor.github.io/hackerrank"
 
