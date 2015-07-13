@@ -4,23 +4,26 @@ This is a wonderful exercise which explains the concept of infinite loops.
 
 An infinite loop in Ruby is of the form
 
-```ruby
+```
 loop do
 end
+
 ```
 
-Use an infinite loop and call the method **coder.practice** within it and break if **coder.oh_one?** is true.
+Use an infinite loop and call the method `coder.practice` within it and break if `coder.oh_one?` is true.
 
-**break if** conditions in Ruby are of the form
+`break if` conditions in Ruby are of the form
 
-```ruby
+```
 if <condition>
     break
 end
+
 ```
 
 or a one-liner
 
-```ruby
-break if <condition>
+```
+break if <condition>  
+
 ```

@@ -1,15 +1,16 @@
-Ruby offers control structures that let you iterate through its collections. One such control structure is **each**.
+Ruby offers control structures that let you iterate through its collections. One such control structure is `each`.
 
-As you already know, HackerRank conducts many contests, and for every user who participates in a contest we update their score once the contest ends. You will be given a method called **scoring** with an array passed as an argument. Elements of the array are of the class **User**.
+As you already know, HackerRank conducts many contests, and for every user who participates in a contest we update their score once the contest ends. You will be given a method called `scoring` with an array passed as an argument. Elements of the array are of the class `User`.
 
-**User** class has a method **update_score**.
+`User` class has a method `update_score`.
 
-Your task is to iterate through each of the elements in the array using **each** and call the method **update_score** on every element.
+Your task is to iterate through each of the elements in the array using `each` and call the method `update_score` on every element.
 
-## Hint
+**Hint**
 
-```ruby
+```
 array.each do |user|
     # call update_score on `a` here
 end
+
 ```
