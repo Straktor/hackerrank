@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Hacker Rank
+tagline:          'Tagline'
+description:      'Description'
+url:              "http://straktor.github.io/hackerrank"
+
+author:
+  name:           'straktor'
+  url:            https://github.com/Straktor
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/Straktor/hackerrank
