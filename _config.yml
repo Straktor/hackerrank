@@ -9,6 +9,7 @@ permalink:        pretty
 title:            Hacker Rank
 tagline:          'Tagline'
 description:      'Description'
+baseurl:	  "/hackerrank"
 url:              "http://straktor.github.io/hackerrank"
 
 author:
