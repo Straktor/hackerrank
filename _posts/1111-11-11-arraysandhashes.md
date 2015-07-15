@@ -58,13 +58,13 @@ array2 = [10, 10]
 ```
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 array = Array.new
 array1 = Array.new(1)
 array2 = Array.new(2, 10)
 {% endhighlight %}
-
+</div>
 ---
 ##02-Array - Index, Part 1
 
@@ -100,8 +100,8 @@ or
 For this challenge, your task is to complete the functions using syntax as explained above.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 # return the element of the Array variable `arr` at the position `index`
 # arr.at(index) # or
 # arr[index]
@@ -123,7 +123,7 @@ def start_and_length(arr, start_pos, length)
 	end
 end
 {% endhighlight %}
-
+</div>
 ---
 ##03-Array - Index, Part 2
 
@@ -161,8 +161,8 @@ For the array,
 In this challenge, you have to use the syntax as explained above and complete the functions accordingly.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 # return the element of the array at the position `index` from the end of the list
 # Clue : arr[-index]
 def neg_pos(arr, index)
@@ -187,7 +187,7 @@ def drop_n(arr, n)
 	arr.drop(n)
 end
 {% endhighlight %}
-
+</div>
 ---
 ##04-Array - Addition
 
@@ -221,8 +221,8 @@ In this challenge, your task is to complete three functions that take in the arr
 4.  Add more than one element after a given index (position)
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 # Add `element` to the end of the Array variable `arr` and return `arr`
 def end_arr_add(arr, element)
 	arr.push(element)
@@ -240,7 +240,7 @@ def index_arr_multiple_add(arr, index)
 	arr.insert(index, 1, 2)
 end
 {% endhighlight %}
-
+</div>
 ---
 ##05-Array - Deletion
 
@@ -275,8 +275,8 @@ Let's look at the array
 Your task is to complete the functions below using syntax as explained above.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 # delete the element from the end of the array and return the deleted element
 def end_arr_delete(arr)
 	arr.pop
@@ -294,7 +294,7 @@ def delete_all(arr, val)
 	arr.delete(val)
 end
 {% endhighlight %}
-
+</div>
 ---
 ##06-Array - Selection
 
@@ -333,8 +333,8 @@ For destructive behavior (change to the original array), Ruby provides the follo
 In this challenge, you have to complete the functions below using syntax as explained above.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 # select and return all odd numbers from the Array variable `arr`
 def select_arr(arr)
 	arr.select { |n| n.odd? }
@@ -352,7 +352,7 @@ def keep_arr(arr)
 	arr.keep_if { |n| n > 0 }
 end
 {% endhighlight %}
-
+</div>
 ---
 ##07-Hash - Initialization
 
@@ -411,13 +411,13 @@ hackerrank["vivmbbs"] = 200
 ```
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 empty_hash = Hash.new 
 default_hash = Hash.new(1)
 hackerrank = {"simmy" => 100, "vivmbbs" => 200}
 {% endhighlight %}
-
+</div>
 ---
 ##08-Hash - Each
 
@@ -461,8 +461,8 @@ puts value
 ```
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def iter_hash(hash)
 	hash.each do |key, value|
 		puts key
@@ -470,7 +470,7 @@ def iter_hash(hash)
 	end
 end
 {% endhighlight %}
-
+</div>
 ---
 ##09-Hash - Addition, Deletion, Selection
 
@@ -520,11 +520,11 @@ In this challenge, a hash object called `hackerrank` is already created. You hav
 *   Delete all key-value pairs where keys are even-valued.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 hackerrank.store(543121, 100)
 hackerrank.keep_if { |key, val| key.is_a? Integer }
 hackerrank.delete_if { |key, val| key.even? }
 {% endhighlight %}
-
+</div>
 ---

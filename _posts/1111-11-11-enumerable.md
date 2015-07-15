@@ -12,8 +12,8 @@ In this challenge, you have been provided with a custom object called `colors` t
 
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def iterate_colors(colors)
 	arr = []
     colors.each do |n|
@@ -21,7 +21,7 @@ def iterate_colors(colors)
     end
 end
 {% endhighlight %}
-
+</div>
 ---
 ##02-each_with_index
 
@@ -57,8 +57,8 @@ For example,
 It is guaranteed that number of items in `animals` array is greater than the value of `skip`.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def skip_animals(animals, skip)
 	arr = []
 	animals.each_with_index do |item, index|
@@ -67,7 +67,7 @@ def skip_animals(animals, skip)
 	return arr
 end
 {% endhighlight %}
-
+</div>
 ---
 ##03-collect
 
@@ -118,13 +118,13 @@ On application of ROT13,
 </pre>
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def rot13(secret_messages)
     secret_messages.map { |x| x.tr('A-Za-z', 'N-ZA-Mn-za-m') }
 end
 {% endhighlight %}
-
+</div>
 ---
 ##04-reduce
 
@@ -184,8 +184,8 @@ Other examples,
 Consider and arithmetico-geometric sequence where the <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-3-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-113" style="width: 1.809em; display: inline-block;"><span style="display: inline-block; position: relative; width: 1.448em; height: 0px; font-size: 123%;"><span style="position: absolute; clip: rect(1.177em 1000.002em 2.306em -0.404em); top: -2.166em; left: 0.002em;"><span class="mrow" id="MathJax-Span-114"><span class="msubsup" id="MathJax-Span-115"><span style="display: inline-block; position: relative; width: 1.402em; height: 0px;"><span style="position: absolute; clip: rect(1.899em 1000.002em 2.622em -0.404em); top: -2.482em; left: 0.002em;"><span class="mi" id="MathJax-Span-116" style="font-family: MathJax_Math-italic;">n</span><span style="display: inline-block; width: 0px; height: 2.486em;"></span></span><span style="position: absolute; top: -2.663em; left: 0.635em;"><span class="texatom" id="MathJax-Span-117"><span class="mrow" id="MathJax-Span-118"><span class="mi" id="MathJax-Span-119" style="font-size: 70.7%; font-family: MathJax_Math-italic;">t</span><span class="mi" id="MathJax-Span-120" style="font-size: 70.7%; font-family: MathJax_Math-italic;">h</span></span></span><span style="display: inline-block; width: 0px; height: 2.306em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.17em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.169em; vertical-align: -0.053em;"></span></span></nobr></span><script type="math/tex" id="MathJax-Element-3">n^{th}</script> term of the sequence is denoted by <span class="MathJax_Preview"></span><span class="MathJax" id="MathJax-Element-4-Frame" role="textbox" aria-readonly="true"><nobr><span class="math" id="MathJax-Span-121" style="width: 9.804em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.952em; height: 0px; font-size: 123%;"><span style="position: absolute; clip: rect(1.764em 1000.002em 3.028em -0.404em); top: -2.708em; left: 0.002em;"><span class="mrow" id="MathJax-Span-122"><span class="msubsup" id="MathJax-Span-123"><span style="display: inline-block; position: relative; width: 0.906em; height: 0px;"><span style="position: absolute; clip: rect(1.719em 1000.002em 2.622em -0.404em); top: -2.482em; left: 0.002em;"><span class="mi" id="MathJax-Span-124" style="font-family: MathJax_Math-italic;">t</span><span style="display: inline-block; width: 0px; height: 2.486em;"></span></span><span style="position: absolute; top: -2.166em; left: 0.364em;"><span class="texatom" id="MathJax-Span-125"><span class="mrow" id="MathJax-Span-126"><span class="mi" id="MathJax-Span-127" style="font-size: 70.7%; font-family: MathJax_Math-italic;">n</span></span></span><span style="display: inline-block; width: 0px; height: 2.306em;"></span></span></span></span><span class="mo" id="MathJax-Span-128" style="font-family: MathJax_Main; padding-left: 0.273em;">=</span><span class="msubsup" id="MathJax-Span-129" style="padding-left: 0.273em;"><span style="display: inline-block; position: relative; width: 1.086em; height: 0px;"><span style="position: absolute; clip: rect(1.899em 1000.002em 2.622em -0.404em); top: -2.482em; left: 0.002em;"><span class="mi" id="MathJax-Span-130" style="font-family: MathJax_Math-italic;">n</span><span style="display: inline-block; width: 0px; height: 2.486em;"></span></span><span style="position: absolute; top: -2.708em; left: 0.635em;"><span class="texatom" id="MathJax-Span-131"><span class="mrow" id="MathJax-Span-132"><span class="mn" id="MathJax-Span-133" style="font-size: 70.7%; font-family: MathJax_Main;">2</span></span></span><span style="display: inline-block; width: 0px; height: 2.351em;"></span></span></span></span><span class="mo" id="MathJax-Span-134" style="font-family: MathJax_Main; padding-left: 0.228em;">+</span><span class="mn" id="MathJax-Span-135" style="font-family: MathJax_Main; padding-left: 0.228em;">1</span><span class="mo" id="MathJax-Span-136" style="font-family: MathJax_Main;">,</span><span class="mi" id="MathJax-Span-137" style="font-family: MathJax_Math-italic; padding-left: 0.183em;">n</span><span class="mo" id="MathJax-Span-138" style="font-family: MathJax_Main; padding-left: 0.273em;">></span><span class="mn" id="MathJax-Span-139" style="font-family: MathJax_Main; padding-left: 0.273em;">0</span></span><span style="display: inline-block; width: 0px; height: 2.712em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 1.392em; vertical-align: -0.275em;"></span></span></nobr></span> <script type="math/tex" id="MathJax-Element-4">t_{n} = n^{2} + 1, n > 0</script>. In this challenge, your task is to complete the `sum` method which takes an integer `n` and returns the **sum to the n terms of the series**.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def sum_terms(n)
    	series = []
    	1.upto(n) do |i|
@@ -194,7 +194,7 @@ def sum_terms(n)
    	series.reduce(0, :+)
 end
 {% endhighlight %}
-
+</div>
 ---
 ##05-any, all, none, find
 
@@ -253,8 +253,8 @@ Consider the following example
 Based on what you have learnt above, your task is to complete the functions given in the code-editor.
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 # Check and return if any key object within the hash is of the type Integer
 def func_any(hash)
 	hash.any? {|key, value| key.is_a? Integer}
@@ -275,7 +275,7 @@ def func_find(hash)
     hash.find { |key, value| (key.is_a? Integer and value.is_a? Integer and value < 20) || (key.is_a? String and value.is_a? String and value.split(//).first == "a") }
 end
 {% endhighlight %}
-
+</div>
 ---
 ##06-group_by
 
@@ -309,11 +309,11 @@ For example,
 </pre>
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def group_by_marks(marks, n)
 	marks.group_by { |key, value| value<n ? "Failed" : "Passed" }
 end
 {% endhighlight %}
-
+</div>
 ---

@@ -5,7 +5,7 @@ def getFileContent(filePath)
 	return file
 end
 
-def createDomainPages(title, sectionList)
+def createDomainPages(title, sectionList, siteUrl)
 
 	formatedTitle = title.downcase.gsub(/\s+/, "")
 	title = title.split.map(&:capitalize)*' '
@@ -24,7 +24,7 @@ def createDomainPages(title, sectionList)
 
 		# Sections
 		sectionList.each do |currentSection|
-			sectionPermalink = currentSection.gsub(/\d+-/, "").downcase.gsub(/\s+/, "") + "/"
+			sectionPermalink = siteUrl + formatedTitle + "/" + currentSection.gsub(/\d+-/, "").downcase.gsub(/\s+/, "") + "/"
 			file.write("[" + currentSection + "](" + sectionPermalink + ")\n\n")
 		end
 
@@ -73,13 +73,13 @@ def createPost(sectionDir, sectionName, title)
 					file.write(getFileContent(fullFilePath) + "\n")
 				end
 
-				if currentFile =~ /rb$/ 
-
-					file.write("\n**Solution**\n")
-
+				if currentFile =~ /rb$/
+					file.write("\n<strong>Solution</strong>\n")
+					file.write("<div class='solution'>")
 					file.write("{% highlight ruby %}\n")
 					file.write(getFileContent(fullFilePath).gsub(/^$\n/, ''))
 					file.write("{% endhighlight %}\n")
+					file.write("</div>")
 				end
 			end
 			file.write("\n---\n")
@@ -92,6 +92,7 @@ end
 #################################### MAIN ####################################
 
 # Create sections based on domains
+siteUrl = '/hackerrank/' # Should match the "url" attribute in config.yml
 baseDir = 'domains/'
 
 domainDirectoryList = Dir.entries(baseDir).select {
@@ -110,7 +111,7 @@ domainDirectoryList.each do |currentDomainDir|
 	# Sort sections 
 	sectionList.sort! { |a,b| a.downcase <=> b.downcase }
 
-	createDomainPages(currentDomainDir, sectionList)
+	createDomainPages(currentDomainDir, sectionList, siteUrl)
 
 	sectionList.each do |currentSection|
 		createPost(fullPath + currentSection + "/", currentDomainDir, currentSection)

@@ -23,15 +23,15 @@ end
 ```
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def scoring(array)
 	array.each do |user|
 		user.update_score
 	end
 end
 {% endhighlight %}
-
+</div>
 ---
 ##02-Unless
 
@@ -64,15 +64,15 @@ The above code is a Ruby one liner.
 `unless` is the logical equivalent of `if not`
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def scoring(array)
 	array.each do |user|
 		user.update_score unless user.is_admin?
 	end
 end
 {% endhighlight %}
-
+</div>
 ---
 ##03-Infinite Loop
 
@@ -107,14 +107,14 @@ break if <condition>
 ```
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 loop do
     coder.practice
     break if coder.oh_one?
 end
 {% endhighlight %}
-
+</div>
 ---
 ##04-Until
 
@@ -154,11 +154,11 @@ or the beautiful one-liner
 ```
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 coder.practice until coder.oh_one?
 {% endhighlight %}
-
+</div>
 ---
 ##05-Case
 
@@ -188,8 +188,8 @@ You have been given a function where an object which may or may not be of the ab
 
 
 
-**Solution**
-{% highlight ruby %}
+<strong>Solution</strong>
+<div class='solution'>{% highlight ruby %}
 def identify_class(obj)
 	case obj
 	when Hacker
@@ -205,5 +205,5 @@ def identify_class(obj)
 	end
 end
 {% endhighlight %}
-
+</div>
 ---

@@ -8,7 +8,7 @@ layout: default
       {% if node.title != null %}
         {% if node.layout == "page" %}
 		  {% if node.title != "About" %}
-		    <div class="post"><h2 class="post-title"><a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></h2></div>
+		  <div class="post"><h2 class="post-title"><a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></h2>{{node.content}}</div>
           {% endif %}
 		{% endif %}
       {% endif %}
