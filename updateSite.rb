@@ -73,7 +73,7 @@ def createPost(sectionDir, sectionName, title)
 					file.write(getFileContent(fullFilePath) + "\n")
 				end
 
-				if currentFile =~ /rb$/
+				if currentFile =~ /solution*/
 					file.write("\n<strong>Solution</strong>\n")
 					file.write("<div class='solution'>")
 					file.write("{% highlight ruby %}\n")
