@@ -76,7 +76,15 @@ def createPost(sectionDir, sectionName, title)
 				if currentFile =~ /solution*/
 					file.write("\n<strong>Solution</strong>\n")
 					file.write("<div class='solution'>")
-					file.write("{% highlight ruby %}\n")
+					
+					if currentFile =~ /cpp$/
+						file.write("{% highlight cpp %}\n")
+					elsif currentFile =~ /sql$/
+						file.write("{% highlight sql %}\n")
+					else
+						file.write("{% highlight ruby %}\n")
+					end
+					
 					file.write(getFileContent(fullFilePath).gsub(/^$\n/, ''))
 					file.write("{% endhighlight %}\n")
 					file.write("</div>")

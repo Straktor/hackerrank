@@ -15,7 +15,7 @@ Let's start with the mandatory ritual. Print the string "Hello, World!". You can
 
 
 <strong>Solution</strong>
-<div class='solution'>{% highlight ruby %}
+<div class='solution'>{% highlight cpp %}
 #include <iostream>
 #include <cstdio>
 using namespace std;
