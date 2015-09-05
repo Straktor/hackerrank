@@ -1,0 +1,1 @@
+SELECT city, state FROM station ORDER BY city ASC, state ASC;
