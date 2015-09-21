@@ -10,4 +10,4 @@ Given a table _STATION_ that holds data for five fields namely _ID_, _CITY_, _ST
     | LONG_W      | NUMERIC    |
     +-------------+------------+ 
 
-Let NUM be no. of cities and NUM unique be no. of unique cities, then write a query to print the value of NUM - NUMunique
+Write a query to print the list of CITY that does not start with vowels and does not end with vowels in lexicographical order. Do not print duplicates.
