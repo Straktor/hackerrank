@@ -10,4 +10,7 @@ Given a table _STATION_ that holds data for five fields namely _ID_, _CITY_, _ST
     | LONG_W      | NUMERIC    |
     +-------------+------------+ 
 
-Let NUM be no. of cities and NUM unique be no. of unique cities, then write a query to print the value of NUM - NUMunique
+Let |city| be the length of the city, write a query to print two lines:
+1. First line is city1 and |city1| separated by space, where |city1| is the possible minimum value.
+2. Second line is city2 and |city2| separated by space, where |city2|  is the possible maximum value.
+If there are more than one possible cities print the lexicographical smallest.
