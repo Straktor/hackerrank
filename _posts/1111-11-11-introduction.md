@@ -496,7 +496,6 @@ int main() {
     scanf("%d %d %d %d", &a, &b, &c, &d);
     int ans = max_of_four(a, b, c, d);
     printf("%d", ans);
-    
     return 0;
 }
 {% endhighlight %}
@@ -577,7 +576,6 @@ void update(int *a,int *b) {
 int main() {
     int a, b;
     int *pa = &a, *pb = &b;
-    
     scanf("%d %d", &a, &b);
     update(pa, pb);
     printf("%d\n%d", a, b);
@@ -648,11 +646,9 @@ int main() {
 	int n; 
 	cin>>n;
 	int numbers[n];
-	
 	for(int i = 0; i < n; i++) {
 		cin >> numbers[i];
 	}
-	
 	for(int i = n-1; i >= 0; i--) {
 		cout << numbers[i] <<" ";
 	}

@@ -85,7 +85,7 @@ def createPost(sectionDir, sectionName, title)
 						file.write("{% highlight ruby %}\n")
 					end
 					
-					file.write(getFileContent(fullFilePath).gsub(/^$\n/, ''))
+					file.write(getFileContent(fullFilePath).gsub(/^(\s|\t)*$\n/, ''))
 					file.write("{% endhighlight %}\n")
 					file.write("</div>")
 				end
