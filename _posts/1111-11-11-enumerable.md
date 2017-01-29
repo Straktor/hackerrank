@@ -60,12 +60,14 @@ It is guaranteed that number of items in `animals` array is greater than the val
 <strong>Solution</strong>
 <div class='solution'>{% highlight ruby %}
 def skip_animals(animals, skip)
-	arr = []
-	animals.each_with_index do |item, index|
-		arr.push("#{index}:#{item}") if index >=skip
-	end
-	return arr
-end
+        arr = []
+        animals.each_with_index do |item, index|
+            if(index >= skip)
+                arr.push("#{index}:#{item}")
+            end
+        end
+        return arr
+    end
 {% endhighlight %}
 </div>
 ---
